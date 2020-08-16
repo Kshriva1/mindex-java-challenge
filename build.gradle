@@ -28,4 +28,8 @@ dependencies {
 	implementation ('org.springframework.boot:spring-boot-starter-data-mongodb')
 	testImplementation ('org.springframework.boot:spring-boot-starter-test')
 	implementation (group: 'de.bwaldvogel', name: 'mongo-java-server', version: '1.25.0')
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.0.1'
+    testCompile group: 'org.hamcrest', name: 'hamcrest-all', version: '1.3'
+    
+	
 }
