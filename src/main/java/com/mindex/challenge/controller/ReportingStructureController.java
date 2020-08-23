@@ -23,7 +23,7 @@ public class ReportingStructureController {
 	Environment environment;
 	
 	@GetMapping("/reporting-structure/{id}")
-	private ReportingStructure read(@PathVariable String id) {
+	public ReportingStructure read(@PathVariable String id) {
 		LOG.debug("Received Reporting Structure create request for employee id [{}]", id);
 		
 		return reportingStructureService.read(id,environment.getProperty("local.server.port"));
